@@ -1,2 +1,3 @@
 # newmag
-Magnetic properties in f-element complexes from first principles
+Purpose: Magnetic properties in f-element complexes from first principles
+Authors: D.-C. Sergentu (UAIC, Iasi), G. Duplaix-Rata (Univ Rennes) & R. Maurice (ISCR Rennes UMR 6226 Univ Rennes)_
