@@ -3,11 +3,8 @@ Purpose: Magnetic properties in f-element complexes from first principles
 
 Authors: 
 
-D.-C. Sergentu (UAIC, Iasi)
-
-G. Duplaix-Rata (Univ Rennes)
-
-R. Maurice (ISCR Rennes UMR 6226 Univ Rennes)
+D.-C. Sergentu (UAIC, Iasi) & G. Duplaix-Rata (ISCR Rennes UMR 6226 Univ Rennes) & R. Maurice (ISCR Rennes UMR 6226 Univ Rennes)
 
 
-Usage: 
+Usage: python newmag.py MyOrcaOutput.out
+
