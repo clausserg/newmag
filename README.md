@@ -1,5 +1,5 @@
 # newmag
-***Description:*** This is version 1.0 of the **newmag** code: a new tool for calculating magnetic properties (crystal field parameters, g-factors, magnetic susceptibility, etc.) in f-element complexes from multiconfiguration wavefunction calculations (CASSCF, CASSCF+SOC, etc.). The current version is functional only for the f1 orbital configuration and outputs produced with the ORCA quantum-chemistry package.
+**Description:** This is version 1.0 of the **newmag** code: a new tool for calculating magnetic properties (crystal field parameters, g-factors, magnetic susceptibility, etc.) in f-element complexes from multiconfiguration wavefunction calculations (CASSCF, CASSCF+SOC, etc.). The current version is functional only for the f1 orbital configuration and outputs produced with the ORCA quantum-chemistry package.
 
 Please see [DISCLAIMER](DISCLAIMER.md) for legal and safety information regarding the use of this code.
 
