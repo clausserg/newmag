@@ -1,4 +1,6 @@
 # newmag
+This is version 1.0 of the **newmag** code: a new tool for calculating magnetic properties in f-element complexes from multiconfiguration wavefunctions (CASSCF, CASSCF+SOC, etc.): crystal field paramters, g-factors, magnetic susceptibility, etc. The current version is functional only for the f1 orbital configuration.
+
 Please see [DISCLAIMER](DISCLAIMER.md) for legal and safety information regarding the use of this code.
 
 **Usage:** python newmag.py MyOrcaOutput.out
