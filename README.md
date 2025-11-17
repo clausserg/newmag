@@ -1,10 +1,6 @@
 # newmag
-Purpose: Magnetic properties in f-element complexes from first principles
+Usage: python newmag.py MyOrcaOutput.out
 
 Authors: 
 
 D.-C. Sergentu (UAIC, Iasi) & G. Duplaix-Rata (ISCR Rennes UMR 6226 Univ Rennes) & R. Maurice (ISCR Rennes UMR 6226 Univ Rennes)
-
-
-Usage: python newmag.py MyOrcaOutput.out
-
