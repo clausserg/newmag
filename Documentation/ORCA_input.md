@@ -49,7 +49,7 @@ The `actorbs` keyword automatically localizes and purifies the orbitals of inter
 - For `forbs`: `0 +1 -1 +2 -2 +3 -3`
 - For `dorbs`: `0 +1 -1 +2 -2`
 #### Example Output (Minimal Active Space)
-Here is a typical desired result (output of europium complex in minimal active space, available [here](../output/Molecular/f6/)):
+Here is a typical desired result (output of europium complex in minimal active space, available [here](../example/f6/Eu_Zn_casscf.out)):
 
 **Active orbitals after the CASSCF calculation:**
 
