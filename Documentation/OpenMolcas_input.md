@@ -83,7 +83,7 @@ OpenMolcas performs two `&RASSCF` blocks:
 We encourage users to explore OpenMolcas outputs on GitHub to understand the effect of localization on the wavefunction and CSFs (Configuration State Functions). Initially, the CASSCF yields a highly heterogeneous atomic basis that is difficult to interpret. By leveraging rotational invariance within the active space, orbitals can be localized and purified to express the CSFs in terms of relevant atomic orbitals (p, d, or f).
 
 #### Example Output (Minimal Active Space)
-Here is a typical desired result (output of cerocene in the minimal active space, available [here](../output/Molecular/f1/Cerocene/cerocene_CAS_1_7.out)):
+Here is a typical desired result (output of cerocene in the minimal active space, available [here](../example/f1/Cerocene/cerocene_CAS_1_7.out)):
 
 **Active orbitals after localization by the `&LOCALISATION` block:**
 
@@ -179,7 +179,7 @@ This keyword is particularly useful in scenarios such as:
 In such cases, CSFs may include orbitals outside the model space. Users must analyze CSF composition to distinguish between model space orbitals and others.
 
 #### Example Output (Extended Active Space)
-Here is a typical desired result (output of cerocene in the extended active space, available [here](../output/Molecular/f1/Cerocene/cerocene_CAS_5_9.out)):
+Here is a typical desired result (output of cerocene in the extended active space, available [here](../example/f1/Cerocene/cerocene_CAS_5_9.out)):
 
 **Active orbitals after localization on $4f$ orbitals:**
 
