@@ -27,9 +27,8 @@ For a visual overview of $\texttt{NewMag}$ and its relationship to $\texttt{AILF
 
 If you use $\texttt{NewMag}$ in your research, please cite:
 
-1. D.-C. Sergentu, G. Duplaix-Rata, I. Humelnicu, B. Le Guennic, and R. Maurice, "Ab initio derivation of the crystal field parameters for lanthanide ions: The $f^1$ case," *J. Chem. Phys.* **164**, 144304 (2026). [DOI:10.1063/5.0313869](https://doi.org/10.1063/5.0313869)
-
-2. $\texttt{NewMag}$ v1.3 preprint
+1. G. Duplaix-Rata, D.-C. Sergentu, B. Le Guennic and R. Maurice, "The NewMag crystal-field code for f-element systems: Implementation for extended active spaces, second-order correlated energies, and generalisation to fn configurations", *arXiv* **arXiv:2609.37541** (2026). [DOI:10.48550/arXiv.2609.37541](https://doi.org/10.48550/arXiv.2609.37541)
+2. D.-C. Sergentu, G. Duplaix-Rata, I. Humelnicu, B. Le Guennic, and R. Maurice, "Ab initio derivation of the crystal field parameters for lanthanide ions: The $f^1$ case," *J. Chem. Phys.* **164**, 144304 (2026). [DOI:10.1063/5.0313869](https://doi.org/10.1063/5.0313869)
 
 ---
 ## Workflow Overview
@@ -119,19 +118,19 @@ For minimal CAS calculations, $\texttt{NewMag}$ usage is straightforward:
 
 **Basic Command Format:**
 ```console
-python3 NewMag.py <output_file> -cfg <configuration>
+python NewMag.py <output_file> -cfg <configuration>
 ```
 
 ### Sample Commands
 
 1. **Cerium(III) Sandwich Complex ($f^1$)**
    ```console
-   python3 NewMag.py output/Molecular/f1/Cerocene/cerocene_CAS_1_7.out -cfg f1
+   python NewMag.py ./example/f1/Cerocene/cerocene_CAS_1_7.out -cfg f1
    ```
 
 2. **Dysprosium(III) Sandwich Complex ($f^9$)**
    ```console
-   python3 NewMag.py output/Molecular/f9/orca/Dy_Cp2.out -cfg f9
+   python NewMag.py ./example/f9/orca/Dy_Cp2.out -cfg f9
    ```
 
 ---
@@ -150,7 +149,7 @@ Active space composition:
 
 **Command:**
 ```console
-python3 NewMag.py output/Molecular/f1/Cerocene/cerocene_CAS_5_9.out -cfg f1 -cas_mo 2d 7c
+python NewMag.py ./example/f1/Cerocene/cerocene_CAS_5_9.out -cfg f1 -cas_mo 2d 7c
 ```
 - `2d`: Fix $\pi$ orbital occupations at 2
 - `7c`: Specify seven centered $f$-orbitals ($2l+1 = 7$ for $f$-orbitals)
@@ -165,14 +164,14 @@ Active space composition:
 
 1. **$4f$-Centric Model** ($d$ orbitals treated as vacant): Keep $f$ orbitals active, $d$ orbitals vacant → `-cas_mo 7c 5v`
    ```console
-   python3 NewMag.py output/Molecular/f1/Cerium_Aqueuse/Ce_ES_cas_fd.out -cfg f1 -cas_mo 7c 5v
+   python NewMag.py ./example/f1/Cerium_Aqueuse/Ce_ES_cas_fd.out -cfg f1 -cas_mo 7c 5v
    ```
    - `7c`: Seven active $f$-orbitals  ($2l+1 = 7$ for $f$-orbitals)
    - `5v`: Five virtual $d$-orbitals
 
 1. **$5d$-Centric Model** ($f$ orbitals treated as vacant): Keep $d$ orbitals active, $f$ orbitals vacant → `-cas_mo 7v 5c`
    ```console
-   python3 NewMag.py output/Molecular/f1/Cerium_Aqueuse/Ce_ES_cas_fd.out -cfg d1 -cas_mo 7v 5c
+   python NewMag.py ./example/f1/Cerium_Aqueuse/Ce_ES_cas_fd.out -cfg d1 -cas_mo 7v 5c
    ```
    - `7v`: Seven virtual $f$-orbitals
    - `5c`: Five active $d$-orbitals ($2l+1 = 5$ for $d$-orbitals)
@@ -193,10 +192,10 @@ Examination of example output files is recommended:
 
 - For OpenMolcas output:
 ```console
-python3 NewMag.py output/Molecular/d4/molcas/Mn_Oh_SOC_2nd_order.out -cfg d4
+python NewMag.py ./example/d4/molcas/Mn_Oh_SOC_2nd_order.out -cfg d4
 ```
 
 - For ORCA output:
 ```console
-python3 NewMag.py output/Molecular/d4/orca/Mn_Oh_SOC_2nd_order.out -cfg d4
+python NewMag.py ./example/d4/orca/Mn_Oh_SOC_2nd_order.out -cfg d4
 ```
