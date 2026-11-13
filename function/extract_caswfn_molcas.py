@@ -58,7 +58,7 @@ def casscf_wfn_molcas(filename,  mag_center, pattern_wfn, ml_order, remove_conf,
                     print('use the cas_mo input')
                     print('There are at most 4 categories of MOs in the active space and the sum of (d+c+o+v) must match the number of active orbitals:')
                     print('d = doubly occupied -> Orbitals with a strict occupancy of 2 ("inactive")')
-                    print(f'c = centered orbitals -> Orbitals at the magnetic center used to build the model space (metal-centered p, d or f orbitals), the total number of c must be equal to {2*mag.l+1}')
+                    print(f'c = centered orbitals -> Orbitals at the magnetic center used to build the model space (metal-centered p, d or f orbitals), the total number of c must be equal to {2*mag_center.l+1}')
                     print('o = other occupied -> Orbitals belonging to the active space but not to the model one (other metal-centered orbitals or ligand-centered orbitals)')
                     print('v = vacant orbitals -> Orbitals with a strict occupancy of 0 ("virtual")')
 

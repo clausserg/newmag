@@ -361,7 +361,7 @@ def select_soc_root(all_so_wfn, number_soc_root, sr_root_select,mag_center, prin
             for i in range(len(projection)):
                     if len(soc_root_selected)==len(mag_center.basis_jmj):
                             break
-                    elif projection[i]==max(norm):
+                    elif projection[i].real==max(norm):
                             soc_root_selected.append(i)
                             norm.remove(max(norm)) 
     weight_wfn_print={}    
