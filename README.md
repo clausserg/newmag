@@ -53,6 +53,7 @@ We recommend using **Miniconda** with the following configuration:
 | sympy   | 1.14.0  |
 | tabulate| 0.10.0  |
 | h5py    | 3.14.0  |
+| pointgroup| 0.4.4 |
 
 > **Note:** The `NewMag.py` file is the main executable. The `function` folder is essential for program operation and must be located in the same directory as `NewMag.py`.
 
