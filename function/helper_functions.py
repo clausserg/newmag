@@ -7,6 +7,7 @@ File with different util python function
 '''
 import re
 import numpy as np
+import scipy as sc
 import math
 import pandas as pd
 from fractions import Fraction
@@ -422,7 +423,7 @@ def pretty_composition(list_energie, H_cf, level, mag_center, decimal, print_lar
     print_large : user option for large print newmag out
     '''
     compo_wft={}
-    eigvals, eigvecs = np.linalg.eigh(H_cf)
+    eigvals, eigvecs = sc.linalg.eigh(H_cf)
     Energie_model=[]
 
     for index_root in range(len(H_cf)):
