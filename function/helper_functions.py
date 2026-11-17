@@ -656,8 +656,8 @@ def soc_analysies(Heff, cfp, mag, decimal, soc_xyz, print_large):
             print(tabulate(df, headers='keys',tablefmt='pipe'),end='\n\n')
             print('RMSD: Root Mean Square Deviation on energies in cm**-1' )
             print('MAE: Mean Absolute Error on energies in cm**-1')
-            print('MAEER: Mean Absolute Error on Energies Relative to the ab initio spectral width in %' ,end='\n\n')
-
+            print('MAEER: Mean Absolute Error on Energies Relative to the ab initio spectral width in %')
+            print('(The spectral width obtained from the ab initio calculation is close to zero. It is possible that the MAEER is incorrect)' ,end='\n\n')
             
         if level.split('-')[-1] == 'so' and Heff[level] is not None:
             so_level_print='SO-'+str(level.split("-")[0]).upper()
@@ -774,7 +774,8 @@ def soc_analysies(Heff, cfp, mag, decimal, soc_xyz, print_large):
             print(tabulate(df, headers='keys',tablefmt='pipe'),end='\n\n')
             print('RMSD: Root Mean Square Deviation on energies in cm**-1' )
             print('MAE: Mean Absolute Error on energies in cm**-1')
-            print('MAEER: Mean Absolute Error on Energies Relative to the ab initio spectral width in %' ,end='\n\n')
+            print('MAEER: Mean Absolute Error on Energies Relative to the ab initio spectral width in %')
+            print('(The spectral width obtained from the ab initio calculation is close to zero. It is possible that the MAEER is incorrect)' ,end='\n\n')
     return
 
 
